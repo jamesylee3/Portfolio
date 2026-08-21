@@ -17,13 +17,18 @@ h1 {
     width: 100%;
     background-color: #CCC5B9;
     color: #252422;
-    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 2%;
+    box-sizing: border-box;
 }
 
 .intro-text {
-    width: 35%;
+    flex: 1;
+    max-width: 600px;
     font-size: 2rem;
-    line-height: .35;
 }
 
 .intro-statement {
@@ -31,9 +36,9 @@ h1 {
 }
 
 #laptop {
-    width: 700px;
-    height: 500px;
-    align-items: flex-end;
+    width: 45%;
+    max-width: 700px;
+    height: auto;
 }
 
 .intro, #laptop {
@@ -68,12 +73,27 @@ header {
     font-weight: bold;
 }
 
+.navbar a:hover {
+    color: #FFFCF2;
+}
+
 #linkedin, #github {
-    border: 2px solid brown;
-    width: 335px;
-    height: 90px;
+    border: 2px solid #252422;
+    width: 15vw;
+    height: 7vh;
+    max-height: 90px;
     border-radius: 10px;
-    margin-top: 50px;
+    margin-top: 5%;
     background-color: #403D39;
-    color: #CCC5B9;
+}
+
+#linkedin:hover, #github:hover {
+    background-color: #FFFCF2;
+}
+
+#linkedin a, #github a {
+    text-decoration: none;
+    color: #EB5E28;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
