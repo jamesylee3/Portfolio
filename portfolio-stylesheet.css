@@ -112,6 +112,7 @@ h2:not(.intro-text h2) {
     display: flex;
     justify-content: space-evenly;
     margin-top: 5%;
+    height: 60vh;
 }
 
 #about p:first-child {
@@ -124,18 +125,19 @@ h2:not(.intro-text h2) {
 }
 
 .skills {
-    width: auto;
-    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 40%;
+    height: 100%;
     border: 2px solid #EB5E28;
+    border-radius: 15px;
 }
 
 #icon {
-    width: 20%;
-    height: 25%;
-}
-
-#java p {
-    text-align: center;
+    width: 40%;
+    height: 35%;
+    transform: translate(100%, 60%);
+    z-index: -1;
 }
 
 /* Used to offset navbar link */
