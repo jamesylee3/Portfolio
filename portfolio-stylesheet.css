@@ -66,14 +66,14 @@ h1 {
 }
 
 .navbar a {
-    color: #EB5E28;
+    color: #FFFCF2;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
 .navbar a:hover {
-    color: #FFFCF2;
+    color: #EB5E28;
 }
 
 #linkedin, #github {
@@ -115,7 +115,7 @@ h2:not(.intro-text h2) {
     height: 60vh;
 }
 
-#about p:first-child {
+.left-about {
     text-shadow: 0px 0px 50px #CCC5B9;
     width: 30%;
     line-height: 2;
@@ -133,9 +133,15 @@ h2:not(.intro-text h2) {
     border-radius: 15px;
 }
 
+.skills p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-top: 25%;
+}
+
 #icon {
     width: 40%;
-    height: 35%;
+    height: 45%;
     transform: translate(100%, 60%);
     z-index: -1;
 }
@@ -143,4 +149,11 @@ h2:not(.intro-text h2) {
 /* Used to offset navbar link */
 hr {
     opacity: 0;
+}
+
+#portfolio-image {
+    width: 50%;
+    height: 50%;
+    border-radius: 200px;
+    border: 2px solid white;
 }
