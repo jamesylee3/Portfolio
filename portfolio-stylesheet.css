@@ -76,6 +76,11 @@ h1 {
     color: #EB5E28;
 }
 
+/* Used to offset navbar link */
+hr {
+    opacity: 0;
+}
+
 #linkedin, #github {
     border: 2px solid #252422;
     padding: 20px 50px;
@@ -103,8 +108,13 @@ h2:not(.intro-text h2) {
     color: #EB5E28;
 }
 
-#about, #projects, #contact{
+#about, #contact {
     height: 100vh;
+    width: auto;
+}
+
+#projects {
+    height: 200vh;
     width: auto;
 }
 
@@ -117,11 +127,19 @@ h2:not(.intro-text h2) {
 
 .left-about {
     text-shadow: 0px 0px 50px #CCC5B9;
-    width: 30%;
-    line-height: 2;
-    font-size: 1.3rem;
+    width: 40%;
+    height: 100%;
+    line-height: 1.5;
+    font-size: 1.1rem;
     padding-left: 5%;
     text-align: center;
+}
+
+#portfolio-image {
+    width: 45%;
+    height: 60%;
+    border-radius: 300px;
+    border: 2px solid white;
 }
 
 .skills {
@@ -131,6 +149,7 @@ h2:not(.intro-text h2) {
     height: 100%;
     border: 2px solid #EB5E28;
     border-radius: 15px;
+    box-shadow: 0px 0px 10px#EB5E28;
 }
 
 .skills p {
@@ -146,14 +165,27 @@ h2:not(.intro-text h2) {
     z-index: -1;
 }
 
-/* Used to offset navbar link */
-hr {
-    opacity: 0;
+.lunaa {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1% 0;
+    border: solid white;
 }
 
-#portfolio-image {
-    width: 50%;
-    height: 50%;
-    border-radius: 200px;
-    border: 2px solid white;
+.lunaa p {
+    text-shadow: 0px 0px 50px #CCC5B9;
+    width: 40%;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+
+#lunaa-demo {
+    border-radius: 10px;
+    width: 35%;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 50px #CCC5B9;
 }
