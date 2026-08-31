@@ -7,6 +7,7 @@ body {
     display: block;
 }
 
+/* James Lee */
 h1 {
     color:#EB5E28;
     font-size: 4.7rem;
@@ -57,7 +58,6 @@ h1 {
     top: 0;
 }
 
-
 .navbar ul {
     display: flex;
     gap: 45px;
@@ -81,7 +81,7 @@ hr {
     opacity: 0;
 }
 
-#linkedin, #github {
+#intro-button {
     border: 2px solid #252422;
     padding: 20px 50px;
     width: 15vw;
@@ -95,10 +95,11 @@ hr {
     font-weight: bold;
 }
 
-#linkedin:hover, #github:hover {
+#intro-button:hover {
     background-color: #FFFCF2;
 }
 
+/* Portfolio Sections */
 h2:not(.intro-text h2) {
     text-shadow: 0px 0px 10px #EB5E28;
     scroll-padding-top: 80px;
@@ -143,6 +144,7 @@ h2:not(.intro-text h2) {
     border-radius: 300px;
     border: 2px solid #7FA6A1;
     box-shadow: 0px 0px 10px#7FA6A1;
+    margin-bottom: 3%;
 }
 
 .skills {
@@ -171,6 +173,7 @@ h2:not(.intro-text h2) {
 .lunaa {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 10%;
 }
 
 .lunaa p {
@@ -187,6 +190,7 @@ h2:not(.intro-text h2) {
     box-shadow: 0px 0px 10px#EB5E28;
 }
 
+/* Project Titles */
 h3 {
     text-align: center;
     font-size: 1.8rem;
@@ -202,7 +206,7 @@ h3 {
     justify-content: space-evenly;
 }
 
-#lunaa-button {
+#code-button {
     padding: 20px 25px;
     width: 10vw;
     height: 3vh;
@@ -217,11 +221,12 @@ h3 {
     margin-top: 5%;
 }
 
-#lunaa-button:hover {
+#code-button:hover {
     background-color: #CCC5B9;
     color: #252422;
 }
 
+/* Key Features */
 h4 {
     font-size: 1.2rem;
     color: #EB5E28;
@@ -231,4 +236,85 @@ h4 {
 
 .lunaa-list li {
     margin-bottom: 10px;
+}
+
+.ball {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#ball-demo {
+    width: 35%;
+    margin-top: 1%;
+    border-radius: 10px;
+    border: 3px solid #EB5E28;
+    box-shadow: 0px 0px 10px#EB5E28;
+}
+
+.ball p {
+    width: 100%;
+    line-height: 1.8rem;
+    font-size: 1rem;
+}
+
+.ball-list li {
+    margin-bottom: 10px;
+}
+
+.ball-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact-statement {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-link {
+    width: 23%;
+    display: inline-flex;
+    text-decoration: none;
+    color: #7FA6A1;
+    margin-bottom: 2%;
+    margin-left: 15%;
+    align-items: center;
+}
+
+.social-link img{
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    background-color: #7FA6A1;
+    border: 2px solid #7FA6A1;
+    box-shadow: 0px 0px 10px#7FA6A1;
+}
+
+.social-link img:hover:not(#location) {
+    background-color: #EB5E28;
+    border: 2px solid #EB5E28;
+    box-shadow: 0px 0px 10px#EB5E28;
+}
+
+.social-link p {
+    margin-left: 5%;
+    margin-top: 1.5%;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.social-link p:hover:not(#location-text) {
+    color: #EB5E28;
+}
+
+#location {
+    border: 2px solid #EB5E28;
+    box-shadow: 0px 0px 10px#EB5E28;
 }
