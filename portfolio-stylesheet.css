@@ -1,6 +1,7 @@
 * {
     font-family: 'Courier New', monospace;
 }
+
 body {
     background-color: #252422;
     color: #FFFCF2;
@@ -111,13 +112,8 @@ h2:not(.intro-text h2) {
     text-underline-offset: 20px;
 }
 
-#about, #contact {
+#about, #contact, #projects {
     min-height: 100vh;
-    width: auto;
-}
-
-#projects {
-    min-height: 200vh;
     width: auto;
 }
 
@@ -172,8 +168,10 @@ h2:not(.intro-text h2) {
 
 .lunaa {
     display: flex;
+    align-items: flex-start;
     justify-content: space-evenly;
     margin-bottom: 10%;
+    text-shadow: 0px 0px 50px #CCC5B9;
 }
 
 .lunaa p {
@@ -239,7 +237,9 @@ h4 {
 
 .ball {
     display: flex;
+    align-items: flex-start;
     justify-content: space-evenly;
+    text-shadow: 0px 0px 50px #CCC5B9;
 }
 
 #ball-demo {
@@ -270,12 +270,14 @@ h4 {
 .contact-statement {
     text-align: center;
     font-size: 1.4rem;
+    text-shadow: 0px 0px 50px #CCC5B9;
 }
 
 .socials {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    text-shadow: 0px 0px 50px #CCC5B9;
 }
 
 .social-link {
@@ -319,3 +321,57 @@ h4 {
     border: 2px solid #EB5E28;
     box-shadow: 0px 0px 10px#EB5E28;
 }
+
+/* SMALLER SCREENS & BIGGER TABLETS */
+@media (max-width: 1100px) {
+
+    h1 {
+        font-size: 3.8rem;
+    }
+
+    .intro {
+        gap: 30px;
+        padding: 5%;
+    }
+
+    .intro-text {
+        font-size: 1.6rem;
+    }
+
+    #laptop {
+        width: 50%;
+        height: auto;
+    }
+
+    .about-content {
+        padding-right: 40px;
+        gap: 25px;
+    }
+
+    .left-about {
+        width: 45%;
+        padding-left: 0;
+        font-size: 1rem;
+    }
+
+    #portfolio-image {
+        width: auto;
+    }
+
+    .skills {
+        width: 45%;
+    }
+
+    #lunaa-demo {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 10%;
+
+    }
+
+    .social-link {
+        width: 35%;
+        margin-left: 10%;
+    }
+}
+
